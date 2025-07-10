@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "my-weather-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tsx",
+        "mcp-weather-server/main.ts"
+      ]
+    },
+    "my-mcp-server-99de4a19": {
+      "type": "stdio",
+      "command":"${workspaceFolder}/mcp-weather-server/run-server.sh",
+      "args": []
+    }
+  }
+}
